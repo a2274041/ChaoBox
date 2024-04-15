@@ -127,7 +127,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://ghproxy.net/https://raw.githubusercontent.com/a2274041/ccbox/main/chaobox.json");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://gitee.com/dsc168/chaobox/raw/master/chaobox.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
